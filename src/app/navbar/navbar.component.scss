@@ -1,0 +1,25 @@
+.background-image {
+    height: 64em;
+    background-size: auto;
+    width: auto;
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/omepage-b1b17.appspot.com/o/img.jpg?alt=media&token=a635e76e-bc94-4564-88be-332f8d808f0b');
+    background-position: 50% 50%;
+}
+
+.navbar {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.nav-item {
+    display: inline-flex;
+}
+
+.nav-bar-list {
+    min-width: 494px;
+}
+
+ul {
+    margin: 0;
+}
