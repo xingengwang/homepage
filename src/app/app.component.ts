@@ -8,13 +8,13 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'app';
   menuItems = [{
-    route: '',
+    route: '/main',
     name: 'Main'
   }, {
-    route: '',
+    route: '/about-me',
     name: 'About Me'
   }, {
-    route: '',
+    route: '/contact',
     name: 'Contact Me'
   }];
 }

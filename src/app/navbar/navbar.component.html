@@ -5,11 +5,11 @@
         </h1>
     </div>
     <h2>Here are some links to help you start</h2>
-    <nav class="navbar">
-        <ul class="nav-bar-list">
-            <li class="nav-item" *ngFor="let menuItem of menuItems">
-                <a>{{menuItem.name}}</a>
-            </li>
-        </ul>
-    </nav>
+    <mat-nav-list class="navbar">
+        <mat-list-item *ngFor="let menuItem of menuItems">
+            <a [routerLink]="[menuItem.route]">{{menuItem.name}}</a>
+        </mat-list-item>
+    </mat-nav-list>
+    <router-outlet></router-outlet>
 </div>
+
