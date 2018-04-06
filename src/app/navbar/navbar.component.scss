@@ -1,6 +1,8 @@
 .background-image {
+    top: 0;
+    bottom: 0;
     height: 64em;
-    background-size: auto;
+    background-size: cover;
     width: auto;
     background-image: url('https://firebasestorage.googleapis.com/v0/b/omepage-b1b17.appspot.com/o/img.jpg?alt=media&token=a635e76e-bc94-4564-88be-332f8d808f0b');
     background-position: 50% 50%;
@@ -8,8 +10,12 @@
 
 .navbar {
     overflow: hidden;
-    position: relative;
+    position: fixed;
     width: 100%;
+    background: whitesmoke;
+    flex-direction: unset;
+    z-index: 1;
+    top: 0;
 }
 
 .nav-item {
@@ -24,4 +30,8 @@
 ul {
     margin: 0;
     text-align: center;
+}
+
+mat-toolbar-row {
+    width: 10%;
 }

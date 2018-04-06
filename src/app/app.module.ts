@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 
 import {AppComponent} from './app.component';
 import {NarbarModule} from './navbar/navbar.module';
-import {MatListModule} from '@angular/material';
+import {MatCardModule, MatListModule} from '@angular/material';
 import {MainComponent} from './main/main.component';
 import {RouterModule, Routes} from '@angular/router';
 import {AboutMeComponent} from './about-me/about-me.component';
@@ -27,6 +27,7 @@ const routes: Routes = [
     BrowserModule,
     RouterModule.forRoot(routes),
     NarbarModule,
+    MatCardModule,
     MatListModule],
   providers: [],
   bootstrap: [AppComponent]

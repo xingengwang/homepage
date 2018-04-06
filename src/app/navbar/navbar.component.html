@@ -1,15 +1,9 @@
 <div class="background-image">
-    <div style="text-align:center">
-        <h1>
-            Welcome to xingeng's homepage!
-        </h1>
-    </div>
-    <h2>Here are some links to help you start</h2>
-    <mat-nav-list class="navbar">
-        <mat-list-item *ngFor="let menuItem of menuItems">
+    <mat-toolbar class="navbar" color="accent">
+        <mat-toolbar-row *ngFor="let menuItem of menuItems">
             <a [routerLink]="[menuItem.route]">{{menuItem.name}}</a>
-        </mat-list-item>
-    </mat-nav-list>
+        </mat-toolbar-row>
+    </mat-toolbar>
     <router-outlet></router-outlet>
 </div>
 
