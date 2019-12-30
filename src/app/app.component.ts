@@ -23,5 +23,5 @@ export class AppComponent {
   constructor(matIconRegistry: MatIconRegistry, sanitizer: DomSanitizer) {
     matIconRegistry.addSvgIcon('fb_icon', sanitizer.bypassSecurityTrustResourceUrl('assets/F_icon.svg'));
     matIconRegistry.addSvgIcon('li_icon', sanitizer.bypassSecurityTrustResourceUrl('assets/Linkedin_icon.svg'));
-}
+  }
 }
